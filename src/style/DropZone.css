@@ -1,0 +1,42 @@
+/* DropZone.css */
+
+.dropzone-container {
+  height: 100vh; /* full viewport height */
+  width: 100vw;  /* full viewport width */
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #60a5fa, #93c5fd, #10b981); /* Tailwind from-sky-400 via-sky-300 to-emerald-500 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cloud1 {
+  position: absolute;
+  top: -6rem; /* -24 */
+  left: 50%;
+  height: 500px;
+  width: auto; /* 64 */
+  opacity: 0.7;
+  transform: translateX(-10%);
+}
+
+.cloud2 {
+  position: absolute;
+  top: -4rem; /* -16 */
+  left: 50%;
+  height: 500px;
+  width: auto; /* 64 */
+  opacity: 0.7;
+  transform: translateX(-10%); /* Center same as cloud1 */
+}
+
+.avatar {
+  position: absolute;
+  width: auto;
+  filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.3));
+  height: 200px;
+  transform-origin: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
